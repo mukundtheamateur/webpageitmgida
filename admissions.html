@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/registration.css">
+   <title>Admission form ITM</title>
+</head>
+<body>
+   <div class="container" style="margin-bottom: 30px;">
+       <header>
+           <h1 id='title'>Admission form ITM</h1>
+           <p id='description'>
+               Apply for our programs
+           </p>
+       </header>
+
+       <form id='survey-form'>
+           <div class='form-input'>
+               <label id='name-label'>Name</label>
+               <input type='text' id='name' placeholder='Enter your name' class='form-input-size' required />
+           </div>
+           <div class='form-input'>
+               <label id='email-label'>Email</label>
+               <input type='email' id='email' placeholder='Enter your email' class='form-input-size' required />
+           </div>
+           <div class='form-input'>
+               <label id='number-label'>Age
+                   <span>(optional)</span>
+               </label>
+               <input type='number' id='number' placeholder='25' min='0' max='80' class='form-input-size' />
+           </div>
+           <div class='form-input'>
+            <p>Gender</p>
+            <select id='dropdown' class='form-input-size' required>
+                <option disabled selected value>Select</option>
+                <option value='Student'>Male</option>
+                <option value='Senior Software Engineer'>female</option>
+                
+                <option value='Other'>Other</option>
+            </select>
+        </div>
+           <div class='form-input'>
+            <p>Select program</p>
+            <select id='dropdown' class='form-input-size' required>
+                <option disabled selected value>Select branch</option>
+                <option value='Student'>B.Tech</option>
+                <option value='Senior Software Engineer'>M.Tech</option>
+                
+                <option value='Other'>Other</option>
+            </select>
+        </div>
+
+           <div class='form-input'>
+               <p>Select branch</p>
+               <select id='dropdown' class='form-input-size' required>
+                   <option disabled selected value>Select branch</option>
+                   <option value='Senior Software Engineer'>Computer Science</option>
+                   <option value='Junior Software Engineer'>ECE</option>
+                   <option value='Full Stack Web Developer'>Mechanical</option>
+                   <option value='Front-end Web Developer'>Civil</option>
+                   <option value='Other'>Other</option>
+               </select>
+           </div>
+
+
+
+           <div class='form-input'>
+               <p>Any query?</p>
+               <textarea type='text' placeholder='Enter your query here...'></textarea>
+           </div>
+
+           <div class='form-input'>
+               <button type='submit' id='submit'>Submit</button>
+           </div>
+       </form>
+   </div>
+   
+
+</body>
+</html>
